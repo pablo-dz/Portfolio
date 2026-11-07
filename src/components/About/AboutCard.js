@@ -16,7 +16,7 @@ function AboutCard() {
             Me interesa explorar cómo distintas disciplinas pueden complementarse para comprender y abordar problemas complejos. Mi formación en astronomía me ha llevado a desarrollar una manera de pensar basada en el análisis, la observación y la búsqueda de explicaciones, pero también ha despertado mi interés por otras áreas, particularmente la ciencia de datos y la tecnología.
             <br />
             <br />
-            Disfruto aprender cosas nuevas, experimentar con herramientas e ideas y enfrentar desafíos que me obliguen a salir de lo conocido. Me motiva especialmente encontrar conexiones entre distintos campos del conocimiento y transformar esa curiosidad en proyectos concretos..
+            Disfruto aprender cosas nuevas, experimentar con herramientas e ideas y enfrentar desafíos que me obliguen a salir de lo conocido. Me motiva especialmente encontrar conexiones entre distintos campos del conocimiento y transformar esa curiosidad en proyectos concretos.
             <br />
             <br />
             Fuera del trabajo y los estudios, disfruto de:
