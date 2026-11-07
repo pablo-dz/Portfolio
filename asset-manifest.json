@@ -1,11 +1,10 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.930ed14d.css",
-    "main.js": "/Portfolio/static/js/main.557c12c7.js",
+    "main.css": "/Portfolio/static/css/main.b5d01819.css",
+    "main.js": "/Portfolio/static/js/main.ee08269a.js",
     "static/js/453.ace21015.chunk.js": "/Portfolio/static/js/453.ace21015.chunk.js",
+    "static/media/avatar.jpeg": "/Portfolio/static/media/avatar.cf674068f79991b6dd6b.jpeg",
     "static/media/cv.pdf": "/Portfolio/static/media/cv.91428592cfb5830687c6.pdf",
-    "static/media/home-main.svg": "/Portfolio/static/media/home-main.541f8179af8209ce03ccf2178fe62dbf.svg",
-    "static/media/about.png": "/Portfolio/static/media/about.aee0f771fbfc1e7b8fa8.png",
     "static/media/galah_project.png": "/Portfolio/static/media/galah_project.dea15fdf3569905c315a.png",
     "static/media/binary_fraction.png": "/Portfolio/static/media/binary_fraction.98c1e509c37fa6f2e9b9.png",
     "static/media/logo.png": "/Portfolio/static/media/logo.d3e83a6741bc105bbdd9.png",
@@ -48,12 +47,12 @@
     "static/media/MUI.svg": "/Portfolio/static/media/MUI.4cc8e67288fab7f3ae7b7d8449ec35d7.svg",
     "static/media/Haskell.svg": "/Portfolio/static/media/Haskell.084122e02bec646ad186861642137932.svg",
     "static/media/Firebase.svg": "/Portfolio/static/media/Firebase.de3da3a4068963dd30fc0f885f170428.svg",
-    "main.930ed14d.css.map": "/Portfolio/static/css/main.930ed14d.css.map",
-    "main.557c12c7.js.map": "/Portfolio/static/js/main.557c12c7.js.map",
+    "main.b5d01819.css.map": "/Portfolio/static/css/main.b5d01819.css.map",
+    "main.ee08269a.js.map": "/Portfolio/static/js/main.ee08269a.js.map",
     "453.ace21015.chunk.js.map": "/Portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.930ed14d.css",
-    "static/js/main.557c12c7.js"
+    "static/css/main.b5d01819.css",
+    "static/js/main.ee08269a.js"
   ]
 }

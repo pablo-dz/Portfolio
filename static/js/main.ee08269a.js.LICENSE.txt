@@ -11,6 +11,12 @@ object-assign
 */
 
 /**
+ * @license
+ * Copyright 2010-2026 Three.js Authors
+ * SPDX-License-Identifier: MIT
+ */
+
+/**
  * @licstart The following is the entire license notice for the
  * Javascript code in this page
  *
