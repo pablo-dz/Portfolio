@@ -12,37 +12,38 @@ function AboutCard() {
             ¡Hola! Soy <span className="purple">Pablo Díaz</span>, de{" "}
             <span className="purple">Santiago, Chile</span>.
             <br />
-            Soy Licenciado en Astronomía de la Pontificia Universidad Católica
-            de Chile y cuento con un certificado académico en Computación e
-            Informática.
             <br />
-            Durante 2025 trabajé como asistente de investigación en el
-            Instituto de Astrofísica UC.
+            Me interesa explorar cómo distintas disciplinas pueden complementarse para comprender y abordar problemas complejos. Mi formación en astronomía me ha llevado a desarrollar una manera de pensar basada en el análisis, la observación y la búsqueda de explicaciones, pero también ha despertado mi interés por otras áreas, particularmente la ciencia de datos y la tecnología.
             <br />
             <br />
-            Fuera del ámbito académico, disfruto de:
+            Disfruto aprender cosas nuevas, experimentar con herramientas e ideas y enfrentar desafíos que me obliguen a salir de lo conocido. Me motiva especialmente encontrar conexiones entre distintos campos del conocimiento y transformar esa curiosidad en proyectos concretos..
+            <br />
+            <br />
+            Fuera del trabajo y los estudios, disfruto de:
           </p>
 
           <ul>
             <li className="about-activity">
-              <ImPointRight /> La lectura y literatura 📚
+              <ImPointRight /> Leer novelas, especialmente aquellas
+              relacionadas con tópicos filosóficos 📚
             </li>
             <li className="about-activity">
-              <ImPointRight /> Practicar básquetbol 🏀
+              <ImPointRight /> Jugar básquetbol con amigos 🏀
             </li>
             <li className="about-activity">
-              <ImPointRight /> Jugar ajedrez con mis amigos ♟️ o en su defecto juegos de mesa 🎲 
+              <ImPointRight /> El ajedrez y los juegos de mesa ♟️🎲
             </li>
             <li className="about-activity">
-              <ImPointRight /> Estoy intentando aprender a tocar el bajo eléctrico 🎸
+              <ImPointRight /> Aprender a tocar el bajo eléctrico 🎸
             </li>
             <li className="about-activity">
-              <ImPointRight /> Mi hobbie desde la infancia: videojuegos 🎮
+              <ImPointRight /> Los videojuegos, uno de mis intereses más
+              antiguos 🎮
             </li>
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            “Science is more than a body of knowledge; it is a way of thinking.”
+            "Science is more than a body of knowledge; it is a way of thinking."
           </p>
           <footer className="blockquote-footer">Carl Sagan</footer>
         </blockquote>
