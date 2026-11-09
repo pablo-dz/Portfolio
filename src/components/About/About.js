@@ -7,7 +7,7 @@ import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 //import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
-import meImg from "../../Assets/avatar.jpeg";
+import profilePortrait from "../../Assets/retrato-perfil.jpeg";
 
 
 function About() {
@@ -35,8 +35,8 @@ function About() {
               className="about-img"
             >
               <img
-                src={meImg}
-                alt="Ilustración personal"
+                src={profilePortrait}
+                alt="Retrato de perfil"
                 className="img-fluid about-profile-img"
               />
             </Col>

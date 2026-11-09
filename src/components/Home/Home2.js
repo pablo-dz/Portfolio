@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/foto2.png";
+import personalPortrait from "../../Assets/retrato-personal.png";
 import Tilt from "react-parallax-tilt";
 
 function Home2() {
@@ -57,9 +57,9 @@ function Home2() {
           <Col md={4} className="myAvtar">
             <Tilt>
               <img
-                src={myImg}
+                src={personalPortrait}
                 className="img-fluid"
-                alt="Ilustración personal"
+                alt="Retrato personal"
               />
             </Tilt>
           </Col>
