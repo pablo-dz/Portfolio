@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/foto2.png";
 import Tilt from "react-parallax-tilt";
 
 function Home2() {
@@ -25,7 +25,7 @@ function Home2() {
               <br />
               Durante mi experiencia como asistente de investigación,
               trabajé en el análisis de datos espectroscópicos de 14 galaxias
-              en fusión, desarrollando{" "}
+              en proceso de fusión, desarrollando{" "}
               <b className="purple">pipelines en Python</b> para procesar
               observaciones del instrumento VLT/MUSE. Mediante modelos
               estadísticos y métodos de optimización, estudié las propiedades

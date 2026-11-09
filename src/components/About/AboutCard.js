@@ -43,9 +43,9 @@ function AboutCard() {
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Science is more than a body of knowledge; it is a way of thinking."
+            "We can only see a short distance ahead, but we can see plenty there that needs to be done."
           </p>
-          <footer className="blockquote-footer">Carl Sagan</footer>
+          <footer className="blockquote-footer">Alan M. Turing</footer>
         </blockquote>
       </Card.Body>
     </Card>
