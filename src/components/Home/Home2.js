@@ -3,6 +3,8 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import personalPortrait from "../../Assets/retrato-personal.png";
 import Tilt from "react-parallax-tilt";
+import ScrollReveal from "../ScrollReveal";
+import PhotoReveal from "../PhotoReveal";
 
 function Home2() {
   return (
@@ -14,7 +16,7 @@ function Home2() {
               SOBRE <span className="purple"> MÍ </span>
             </h1>
 
-            <p className="home-about-body">
+            <ScrollReveal as="p" className="home-about-body">
               Soy <b className="purple">Licenciado en Astronomía</b> de la
               Pontificia Universidad Católica de Chile. Mi formación
               académica me ha permitido desarrollar una sólida base en
@@ -51,17 +53,19 @@ function Home2() {
               . Me motiva explorar cómo las herramientas matemáticas y
               computacionales permiten extraer conocimiento de los datos y
               abordar problemas complejos en distintas áreas.
-            </p>
+            </ScrollReveal>
           </Col>
 
           <Col md={4} className="myAvtar">
-            <Tilt>
-              <img
-                src={personalPortrait}
-                className="img-fluid"
-                alt="Retrato personal"
-              />
-            </Tilt>
+            <PhotoReveal className="personal-photo-reveal">
+              <Tilt>
+                <img
+                  src={personalPortrait}
+                  className="img-fluid"
+                  alt="Retrato personal"
+                />
+              </Tilt>
+            </PhotoReveal>
           </Col>
         </Row>
       </Container>
