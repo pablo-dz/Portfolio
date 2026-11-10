@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.23019585.css",
-    "main.js": "/Portfolio/static/js/main.47a85cc8.js",
+    "main.js": "/Portfolio/static/js/main.6daad6b0.js",
     "static/js/453.ace21015.chunk.js": "/Portfolio/static/js/453.ace21015.chunk.js",
     "static/media/retrato-personal.png": "/Portfolio/static/media/retrato-personal.c1069b82348e04b91845.png",
     "static/media/retrato-perfil.jpeg": "/Portfolio/static/media/retrato-perfil.cf674068f79991b6dd6b.jpeg",
     "static/media/pkollector_logo.png": "/Portfolio/static/media/pkollector_logo.0aebbb46d0ea5e377ecb.png",
-    "static/media/cv-en.pdf": "/Portfolio/static/media/cv-en.c2032873a135b453593e.pdf",
-    "static/media/cv.pdf": "/Portfolio/static/media/cv.23f7fd900f8d695551a3.pdf",
+    "static/media/cv-en.pdf": "/Portfolio/static/media/cv-en.b1a7229de8fd7694ca1e.pdf",
+    "static/media/cv.pdf": "/Portfolio/static/media/cv.695b1ae6aa8994e3e6bf.pdf",
     "static/media/galah_project.png": "/Portfolio/static/media/galah_project.dea15fdf3569905c315a.png",
     "static/media/binary_fraction.png": "/Portfolio/static/media/binary_fraction.98c1e509c37fa6f2e9b9.png",
     "static/media/logo.png": "/Portfolio/static/media/logo.d3e83a6741bc105bbdd9.png",
@@ -52,11 +52,11 @@
     "static/media/Firebase.svg": "/Portfolio/static/media/Firebase.de3da3a4068963dd30fc0f885f170428.svg",
     "static/media/flag-es.svg": "/Portfolio/static/media/flag-es.71d33a71f32d6f0a7c31.svg",
     "main.23019585.css.map": "/Portfolio/static/css/main.23019585.css.map",
-    "main.47a85cc8.js.map": "/Portfolio/static/js/main.47a85cc8.js.map",
+    "main.6daad6b0.js.map": "/Portfolio/static/js/main.6daad6b0.js.map",
     "453.ace21015.chunk.js.map": "/Portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.23019585.css",
-    "static/js/main.47a85cc8.js"
+    "static/js/main.6daad6b0.js"
   ]
 }
