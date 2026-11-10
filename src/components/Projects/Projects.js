@@ -14,7 +14,8 @@ import Particle from "../Particle";
 
 // Imagen del proyecto GALAH
 import galah from "../../Assets/Projects/galah_project.png";
-import globular_cluster from "../../Assets/Projects/binary_fraction.png"
+import globular_cluster from "../../Assets/Projects/binary_fraction.png";
+import pkollector from "../../Assets/Projects/pkollector_logo.png";
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -46,6 +47,17 @@ function Projects() {
               title="Fracción binaria en cúmulos globulares: Gaia DR3 + MIST"
               description="Estimación de la fracción de estrellas binarias de secuencia principal (MS-MS) en ocho cúmulos globulares, utilizando datos astrométricos y fotométricos de Gaia DR3 e isócronas MIST. El proyecto implementa el método de identificación de binarias de Pang et al. (2023a) y realiza un análisis preliminar de la relación entre la fracción binaria y la edad de los cúmulos."
               ghLink="https://github.com/pablo-dz/gaia-binary-stars"
+            />
+          </Col>
+
+           <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={pkollector}
+              isBlog={false}
+              title="PKollector"
+              description="Una aplicación web desarrollada para gestionar colecciones de Pokémon TCG, permitiendo registrar cartas, administrar cantidades, organizar inventarios y realizar un seguimiento de las cartas faltantes. El proyecto surge de una necesidad personal y utiliza herramientas de programación para desarrollar una solución práctica a un problema cotidiano."
+              ghLink="https://github.com/pablo-dz/PKollector"
+              demoLink="https://p-kollector.vercel.app/"
             />
           </Col>
 

@@ -8,9 +8,9 @@ function ProjectCards(props) {
   return (
     <Card className="project-card-view">
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
-      <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Card.Text style={{ textAlign: "center" }}>
+      <Card.Body className="project-card-body">
+        <Card.Title className="project-card-title">{props.title}</Card.Title>
+        <Card.Text className="project-card-description">
           {props.description}
         </Card.Text>
         <Button variant="primary" href={props.ghLink} target="_blank">
