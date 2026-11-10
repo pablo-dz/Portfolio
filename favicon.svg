@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <rect width="512" height="512" rx="112" fill="#c770f0" />
+  <g fill="#FFFFFF" transform="translate(116, 126)">
+    <!-- Letra P -->
+    <path d="M 0 0 H 120 C 165 0 200 35 200 80 C 200 125 165 160 120 160 H 60 V 260 H 0 Z M 60 50 V 110 H 115 C 132 110 145 97 145 80 C 145 63 132 50 115 50 Z" />
+    <!-- Letra D entramada -->
+    <path d="M 120 0 H 200 C 245 0 280 35 280 80 V 180 C 280 225 245 260 200 260 H 80 V 210 H 200 C 217 210 230 197 230 180 V 80 C 230 63 217 50 200 50 H 120 Z" />
+    <!-- Destello central de datos -->
+    <path d="M 140 105 Q 140 130 115 130 Q 140 130 140 155 Q 140 130 165 130 Q 140 130 140 105 Z" fill="#c770f0" />
+  </g>
+</svg>
