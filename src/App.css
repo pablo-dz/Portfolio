@@ -56,9 +56,67 @@
   text-decoration: none;
   font-weight: 500;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-.contact-button:hover {
+.contact-button:hover:not(:disabled) {
   background-color: transparent;
   color: #c084f5;
+}
+
+.contact-button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.65rem;
+  width: min(100%, 560px);
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-form label {
+  color: white;
+  font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.7rem 0.85rem;
+  color: white;
+  background: rgba(15, 10, 28, 0.8);
+  border: 1px solid rgba(199, 112, 240, 0.55);
+  border-radius: 6px;
+  font: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid #c084f5;
+  outline-offset: 2px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form .contact-button {
+  justify-self: center;
+}
+
+.contact-form-feedback {
+  margin: 0 0 1rem;
+  text-align: center;
+}
+
+.contact-form-feedback.success {
+  color: #a7f3d0;
+}
+
+.contact-form-feedback.error {
+  color: #fca5a5;
 }

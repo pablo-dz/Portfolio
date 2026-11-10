@@ -8,6 +8,7 @@ import Type from "./Type";
 import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import Spiral from "./Spiral";
+import ContactForm from "../ContactForm";
 
 function Home() {
   return (
@@ -75,19 +76,12 @@ function Home() {
               </li>
             </ul>
 
-            <p>
+            <p className="contact-intro">
               Siéntete libre de{" "}
               <span className="purple">conectar</span> conmigo.
             </p>
 
-            <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=paaldz02@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="contact-button"
-            >
-              Envíame un correo
-            </a>
+            <ContactForm />
           </Col>
         </Row>
       </Container>

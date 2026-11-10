@@ -249,6 +249,7 @@ button:focus {
   background-size: cover !important;
   width: 100%;
   height: 100%;
+  pointer-events: none;
 }
 
 .home-header {
@@ -375,7 +376,11 @@ button:focus {
 }
 
 .home-about-social h1 {
-  margin-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.home-about-social .contact-intro {
+  margin-top: 1.75rem;
 }
 
 .home-about-social-links {
@@ -488,6 +493,9 @@ button:focus {
 }
 
 .footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
   padding: 0 !important;
