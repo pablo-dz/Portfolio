@@ -2,14 +2,19 @@ import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-import pdf from "../../Assets/../Assets/cv.pdf";
+import spanishResume from "../../Assets/cv.pdf";
+import englishResume from "../../Assets/cv-en.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+import { useLanguage } from "../../contexts/LanguageContext";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
+  const { isEnglish } = useLanguage();
+  const pdf = isEnglish ? englishResume : spanishResume;
+  const downloadLabel = isEnglish ? "Download resume" : "Descargar CV";
 
   useEffect(() => {
     setWidth(window.innerWidth);
@@ -27,7 +32,7 @@ function ResumeNew() {
             style={{ maxWidth: "250px" }}
           >
             <AiOutlineDownload />
-            &nbsp;Descargar CV
+            &nbsp;{downloadLabel}
           </Button>
         </Row>
 
@@ -45,7 +50,7 @@ function ResumeNew() {
             style={{ maxWidth: "250px" }}
           >
             <AiOutlineDownload />
-            &nbsp;Descargar CV
+            &nbsp;{downloadLabel}
           </Button>
         </Row>
       </Container>

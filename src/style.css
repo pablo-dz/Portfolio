@@ -90,8 +90,9 @@ button:focus {
 .navbar {
   position: fixed !important;
   transition: all 0.3s ease-out 0s !important;
-  padding: 0.3rem 2rem !important;
+  padding: 0.3rem 1.5rem !important;
   font-size: 1.2rem !important;
+  min-height: 145px;
 }
 
 .navbar-toggler {
@@ -145,36 +146,63 @@ button:focus {
   opacity: 0.9 !important;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
     background-color: #181a27 !important;
+    min-height: auto;
   }
+
+  .navbar-brand {
+    flex-basis: 210px;
+    width: 210px;
+  }
+
+  .logo {
+    width: 210px !important;
+    height: 112px !important;
+  }
+
+  .navbar-nav {
+    align-items: flex-start;
+  }
+
+  .navbar-nav .nav-item {
+    margin-left: 0;
+  }
+
   .navbar-nav .nav-item a::after {
     display: none !important;
   }
 }
 .navbar-brand {
   color: rgb(250, 250, 250) !important;
+  flex: 0 0 240px;
+  width: 240px;
+  margin-right: 1.5rem !important;
 }
 
 .logo {
-  height: 8em !important;
-  width: 15em !important;
+  display: block;
+  width: 240px !important;
+  height: 128px !important;
+  object-fit: contain;
 }
 
 .navbar-nav .nav-link {
   color: white !important;
-  padding-right: 1rem !important;
-  padding-left: 1rem !important;
+  padding-right: 0.75rem !important;
+  padding-left: 0.75rem !important;
+  white-space: nowrap;
+  font-size: 1.1rem !important;
 }
 
 .nav-link {
   padding: 0.8rem 1rem !important;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .nav-link {
     padding: 0.7rem 1rem !important;
   }
@@ -182,7 +210,100 @@ button:focus {
 
 .navbar-nav .nav-item {
   position: relative;
-  margin-left: 20px;
+  margin-left: 0.5rem;
+}
+
+.language-toggle-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-left: 1.15rem !important;
+}
+
+.language-code {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  transition: color 0.2s ease;
+}
+
+.language-toggle-item:not(.is-english) .language-code-es,
+.language-toggle-item.is-english .language-code-en {
+  color: #fff;
+}
+
+.language-toggle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 76px;
+  height: 40px;
+  padding: 0;
+  overflow: hidden;
+  background: rgba(8, 6, 18, 0.85);
+  border: 1px solid rgba(201, 91, 245, 0.75);
+  border-radius: 999px;
+  cursor: pointer;
+  transition:
+    box-shadow 0.25s ease;
+}
+
+.language-toggle::before {
+  position: absolute;
+  z-index: 1;
+  top: 1px;
+  left: 1px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: url("./Assets/flag-uk.svg") center / cover no-repeat;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+  content: "";
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.language-toggle-item:not(.is-english) .language-toggle::before {
+  background-image: url("./Assets/flag-es.svg");
+}
+
+.language-toggle-item.is-english .language-toggle::before {
+  transform: translateX(36px);
+}
+
+.language-toggle:hover,
+.language-toggle:focus-visible {
+  box-shadow: 0 0 10px rgba(201, 91, 245, 0.6);
+  outline: none;
+}
+
+@media (min-width: 992px) {
+  .navbar-nav {
+    align-items: center;
+  }
+
+  .navbar-nav > .nav-item:nth-child(1) .nav-link {
+    width: 112px;
+  }
+
+  .navbar-nav > .nav-item:nth-child(2) .nav-link {
+    width: 140px;
+  }
+
+  .navbar-nav > .nav-item:nth-child(3) .nav-link {
+    width: 150px;
+  }
+
+  .navbar-nav > .nav-item:nth-child(4) .nav-link {
+    width: 112px;
+  }
+
+  .navbar-nav .fork-btn {
+    padding-top: 0 !important;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .navbar-nav .nav-item .nav-link {

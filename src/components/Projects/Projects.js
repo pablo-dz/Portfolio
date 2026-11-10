@@ -16,17 +16,26 @@ import Particle from "../Particle";
 import galah from "../../Assets/Projects/galah_project.png";
 import globular_cluster from "../../Assets/Projects/binary_fraction.png";
 import pkollector from "../../Assets/Projects/pkollector_logo.png";
+import { useLanguage } from "../../contexts/LanguageContext";
+
 function Projects() {
+  const { isEnglish } = useLanguage();
+
   return (
     <Container fluid className="project-section">
       <Particle />
       <Container>
         <h1 className="project-heading">
-          Mis <strong className="purple">Trabajos</strong>
+          {isEnglish ? "My " : "Mis "}
+          <strong className="purple">
+            {isEnglish ? "Projects" : "Trabajos"}
+          </strong>
         </h1>
 
         <p style={{ color: "white" }}>
-          Una selección de algunos de mis proyectos.
+          {isEnglish
+            ? "A selection of some of my projects."
+            : "Una selección de algunos de mis proyectos."}
         </p>
 
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
@@ -34,8 +43,16 @@ function Projects() {
             <ProjectCard
               imgPath={galah}
               isBlog={false}
-              title="GALAH DR4: Random Forest para la Vía Láctea"
-              description="Desarrollo de modelos de aprendizaje automático mediante Random Forest, utilizando datos espectroscópicos de más de 900.000 estrellas del catálogo GALAH DR4. El proyecto explora la clasificación de las distintas componentes de la Vía Láctea, la predicción de abundancias químicas y la estimación de edades estelares a partir de su composición química."
+              title={
+                isEnglish
+                  ? "GALAH DR4: Random Forest for the Milky Way"
+                  : "GALAH DR4: Random Forest para la Vía Láctea"
+              }
+              description={
+                isEnglish
+                  ? "Development of Random Forest machine learning models using spectroscopic data from more than 900,000 stars in the GALAH DR4 catalog. The project explores classification of the Milky Way's components, prediction of chemical abundances, and estimation of stellar ages from their chemical composition."
+                  : "Desarrollo de modelos de aprendizaje automático mediante Random Forest, utilizando datos espectroscópicos de más de 900.000 estrellas del catálogo GALAH DR4. El proyecto explora la clasificación de las distintas componentes de la Vía Láctea, la predicción de abundancias químicas y la estimación de edades estelares a partir de su composición química."
+              }
               ghLink="https://github.com/pablo-dz/GALAH-Galactic-Archaeology"
             />
           </Col>
@@ -44,8 +61,16 @@ function Projects() {
             <ProjectCard
               imgPath={globular_cluster}
               isBlog={false}
-              title="Fracción binaria en cúmulos globulares: Gaia DR3 + MIST"
-              description="Estimación de la fracción de estrellas binarias de secuencia principal (MS-MS) en ocho cúmulos globulares, utilizando datos astrométricos y fotométricos de Gaia DR3 e isócronas MIST. El proyecto implementa el método de identificación de binarias de Pang et al. (2023a) y realiza un análisis preliminar de la relación entre la fracción binaria y la edad de los cúmulos."
+              title={
+                isEnglish
+                  ? "Binary fraction in globular clusters: Gaia DR3 + MIST"
+                  : "Fracción binaria en cúmulos globulares: Gaia DR3 + MIST"
+              }
+              description={
+                isEnglish
+                  ? "Estimation of the main-sequence binary fraction (MS-MS) in eight globular clusters using Gaia DR3 astrometric and photometric data and MIST isochrones. The project implements the binary identification method of Pang et al. (2023a) and conducts a preliminary analysis of the relationship between binary fraction and cluster age."
+                  : "Estimación de la fracción de estrellas binarias de secuencia principal (MS-MS) en ocho cúmulos globulares, utilizando datos astrométricos y fotométricos de Gaia DR3 e isócronas MIST. El proyecto implementa el método de identificación de binarias de Pang et al. (2023a) y realiza un análisis preliminar de la relación entre la fracción binaria y la edad de los cúmulos."
+              }
               ghLink="https://github.com/pablo-dz/gaia-binary-stars"
             />
           </Col>
@@ -55,7 +80,11 @@ function Projects() {
               imgPath={pkollector}
               isBlog={false}
               title="PKollector"
-              description="Una aplicación web desarrollada para gestionar colecciones de Pokémon TCG, permitiendo registrar cartas, administrar cantidades, organizar inventarios y realizar un seguimiento de las cartas faltantes. El proyecto surge de una necesidad personal y utiliza herramientas de programación para desarrollar una solución práctica a un problema cotidiano."
+              description={
+                isEnglish
+                  ? "A web application for managing Pokémon TCG collections. It lets users register cards, track quantities, organize inventories, and keep track of missing cards. Created to address a personal need, the project uses programming tools to solve an everyday problem."
+                  : "Una aplicación web desarrollada para gestionar colecciones de Pokémon TCG, permitiendo registrar cartas, administrar cantidades, organizar inventarios y realizar un seguimiento de las cartas faltantes. El proyecto surge de una necesidad personal y utiliza herramientas de programación para desarrollar una solución práctica a un problema cotidiano."
+              }
               ghLink="https://github.com/pablo-dz/PKollector"
               demoLink="https://p-kollector.vercel.app/"
             />

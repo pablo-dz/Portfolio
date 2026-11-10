@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useLanguage } from "../contexts/LanguageContext";
 
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/xzeenrzo";
 const RECAPTCHA_SITE_KEY = "6LcwExkuAAAAAEZVRJuQHcI3XHSXpq2EVOdMriCJ";
@@ -38,6 +39,7 @@ function loadRecaptcha() {
 function ContactForm() {
   const [status, setStatus] = useState("idle");
   const [feedback, setFeedback] = useState("");
+  const { isEnglish } = useLanguage();
 
   async function handleSubmit(event) {
     event.preventDefault();
@@ -54,7 +56,7 @@ function ContactForm() {
       );
 
       if (!recaptchaToken) {
-        throw new Error("reCAPTCHA no generó un token válido.");
+        throw new Error("reCAPTCHA did not return a valid token.");
       }
 
       const formData = new FormData(form);
@@ -68,7 +70,9 @@ function ContactForm() {
       });
 
       if (!response.ok) {
-        let errorMessage = `Formspree rechazó el envío (HTTP ${response.status}).`;
+        let errorMessage = isEnglish
+          ? `Formspree rejected the submission (HTTP ${response.status}).`
+          : `Formspree rechazó el envío (HTTP ${response.status}).`;
 
         try {
           const responseBody = await response.text();
@@ -101,20 +105,28 @@ function ContactForm() {
 
       form.reset();
       setStatus("success");
-      setFeedback("¡Gracias! Tu mensaje fue enviado.");
+      setFeedback(
+        isEnglish
+          ? "Thank you! Your message has been sent."
+          : "¡Gracias! Tu mensaje fue enviado."
+      );
     } catch (error) {
       setStatus("error");
       setFeedback(
         isSubmitting
-          ? "Hubo un problema de conexión con Formspree. Inténtalo nuevamente."
-          : "No se pudo verificar reCAPTCHA. Revisa la conexión e inténtalo nuevamente."
+          ? isEnglish
+            ? "There was a connection problem with Formspree. Please try again."
+            : "Hubo un problema de conexión con Formspree. Inténtalo nuevamente."
+          : isEnglish
+            ? "reCAPTCHA verification failed. Check your connection and try again."
+            : "No se pudo verificar reCAPTCHA. Revisa la conexión e inténtalo nuevamente."
       );
     }
   }
 
   return (
     <form className="contact-form" onSubmit={handleSubmit}>
-      <label htmlFor="contact-name">Nombre</label>
+      <label htmlFor="contact-name">{isEnglish ? "Name" : "Nombre"}</label>
       <input
         id="contact-name"
         name="name"
@@ -123,7 +135,9 @@ function ContactForm() {
         required
       />
 
-      <label htmlFor="contact-email">Correo electrónico</label>
+      <label htmlFor="contact-email">
+        {isEnglish ? "Email address" : "Correo electrónico"}
+      </label>
       <input
         id="contact-email"
         name="email"
@@ -132,7 +146,9 @@ function ContactForm() {
         required
       />
 
-      <label htmlFor="contact-message">Mensaje</label>
+      <label htmlFor="contact-message">
+        {isEnglish ? "Message" : "Mensaje"}
+      </label>
       <textarea id="contact-message" name="message" rows="5" required />
 
       <button
@@ -140,7 +156,13 @@ function ContactForm() {
         type="submit"
         disabled={status === "sending"}
       >
-        {status === "sending" ? "Enviando..." : "Enviar mensaje"}
+        {status === "sending"
+          ? isEnglish
+            ? "Sending..."
+            : "Enviando..."
+          : isEnglish
+            ? "Send message"
+            : "Enviar mensaje"}
       </button>
 
       {feedback && (

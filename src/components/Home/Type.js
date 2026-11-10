@@ -1,16 +1,27 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 function Type() {
+  const { isEnglish } = useLanguage();
+
   return (
     <Typewriter
+      key={isEnglish ? "en" : "es"}
       options={{
-        strings: [
-          "Formación en Astronomía",
-          "Ciencia de Datos ",
-          "Análisis Computacional",
-          "Programación y Tecnología",
-        ],
+        strings: isEnglish
+          ? [
+              "Astronomy Graduate",
+              "Data Science",
+              "Computational Analysis",
+              "Programming & Technology",
+            ]
+          : [
+              "Formación en Astronomía",
+              "Ciencia de Datos",
+              "Análisis Computacional",
+              "Programación y Tecnología",
+            ],
         autoStart: true,
         loop: true,
         delay: 25,

@@ -9,8 +9,11 @@ import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import Spiral from "./Spiral";
 import ContactForm from "../ContactForm";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 function Home() {
+  const { isEnglish } = useLanguage();
+
   return (
     <section>
       <Container fluid className="home-section" id="home">
@@ -19,14 +22,14 @@ function Home() {
           <Row>
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
-                ¡Hola Mundo!{" "}
+                {isEnglish ? "Hello World!" : "¡Hola Mundo!"}{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span>
               </h1>
 
               <h1 className="heading-name">
-                SOY
+                {isEnglish ? "I'M" : "SOY"}
                 <strong className="main-name"> PABLO DÍAZ</strong>
               </h1>
 
@@ -48,7 +51,7 @@ function Home() {
       <Container>
         <Row style={{ paddingTop: "50px", paddingBottom: "80px" }}>
           <Col md={12} className="home-about-social">
-            <h1>Encuéntrame en</h1>
+            <h1>{isEnglish ? "Find me on" : "Encuéntrame en"}</h1>
 
             <ul className="home-about-social-links">
               <li className="social-icons">
@@ -77,8 +80,11 @@ function Home() {
             </ul>
 
             <p className="contact-intro">
-              Siéntete libre de{" "}
-              <span className="purple">conectar</span> conmigo.
+              {isEnglish ? "Feel free to " : "Siéntete libre de "}
+              <span className="purple">
+                {isEnglish ? "connect" : "conectar"}
+              </span>
+              {isEnglish ? " with me." : " conmigo."}
             </p>
 
             <ContactForm />

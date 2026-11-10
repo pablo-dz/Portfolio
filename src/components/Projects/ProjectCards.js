@@ -3,8 +3,11 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 function ProjectCards(props) {
+  const { isEnglish } = useLanguage();
+
   return (
     <Card className="project-card-view">
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
@@ -30,7 +33,7 @@ function ProjectCards(props) {
             style={{ marginLeft: "10px" }}
           >
             <CgWebsite /> &nbsp;
-            {"Demo"}
+            {isEnglish ? "Live demo" : "Ver demo"}
           </Button>
         )}
       </Card.Body>

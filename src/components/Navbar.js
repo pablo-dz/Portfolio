@@ -8,10 +8,12 @@ import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { AiFillGithub, AiOutlineHome, AiOutlineFundProjectionScreen, AiOutlineUser } from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
+import { useLanguage } from "../contexts/LanguageContext";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  const { isEnglish, toggleLanguage } = useLanguage();
 
   useEffect(() => {
     function scrollHandler() {
@@ -33,8 +35,8 @@ function NavBar() {
     <Navbar
       expanded={expand}
       fixed="top"
-      expand="md"
-      className={navColour ? "sticky" : "navbar"}
+      expand="lg"
+      className={navColour ? "navbar sticky" : "navbar"}
     >
       <Container>
         <Navbar.Brand as={Link} to="/" className="d-flex">
@@ -60,7 +62,8 @@ function NavBar() {
                 to="/"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Inicio
+                <AiOutlineHome style={{ marginBottom: "2px" }} />{" "}
+                {isEnglish ? "Home" : "Inicio"}
               </Nav.Link>
             </Nav.Item>
 
@@ -70,7 +73,8 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> Sobre mí
+                <AiOutlineUser style={{ marginBottom: "2px" }} />{" "}
+                {isEnglish ? "About me" : "Sobre mí"}
               </Nav.Link>
             </Nav.Item>
 
@@ -83,7 +87,7 @@ function NavBar() {
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                Proyectos
+                {isEnglish ? "Projects" : "Proyectos"}
               </Nav.Link>
             </Nav.Item>
 
@@ -93,7 +97,8 @@ function NavBar() {
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> CV
+                <CgFileDocument style={{ marginBottom: "2px" }} />{" "}
+                {isEnglish ? "Resume" : "CV"}
               </Nav.Link>
             </Nav.Item>
 
@@ -106,6 +111,28 @@ function NavBar() {
               >
                 <AiFillGithub style={{ fontSize: "1.2em" }} /> GitHub
               </Button>
+            </Nav.Item>
+            <Nav.Item
+              className={`language-toggle-item${isEnglish ? " is-english" : ""}`}
+            >
+              <span className="language-code language-code-es" aria-hidden="true">
+                ESP
+              </span>
+              <button
+                type="button"
+                className="language-toggle"
+                onClick={toggleLanguage}
+                aria-label={
+                  isEnglish ? "Cambiar idioma a español" : "Switch language to English"
+                }
+                aria-pressed={isEnglish}
+                title={isEnglish ? "Switch to Spanish" : "Cambiar a inglés"}
+              >
+                <span className="language-toggle-knob" aria-hidden="true" />
+              </button>
+              <span className="language-code language-code-en" aria-hidden="true">
+                EN
+              </span>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>

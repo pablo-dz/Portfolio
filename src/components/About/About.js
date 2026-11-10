@@ -9,9 +9,12 @@ import Aboutcard from "./AboutCard";
 import Toolstack from "./Toolstack";
 import profilePortrait from "../../Assets/retrato-perfil.jpeg";
 import PhotoReveal from "../PhotoReveal";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 
 function About() {
+  const { isEnglish } = useLanguage();
+
   return (
     <>
       <Particle />
@@ -26,7 +29,10 @@ function About() {
               }}
             >
               <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-                CONOCE <strong className="purple">MI PERFIL</strong>
+                {isEnglish ? "GET TO KNOW " : "CONOCE "}
+                <strong className="purple">
+                  {isEnglish ? "MY PROFILE" : "MI PERFIL"}
+                </strong>
               </h1>
               <Aboutcard />
             </Col>
@@ -46,13 +52,19 @@ function About() {
           </Row>
 
           <h1 className="project-heading">
-            <strong className="purple">Habilidades</strong> técnicas
+            <strong className="purple">
+              {isEnglish ? "Technical" : "Habilidades"}
+            </strong>{" "}
+            {isEnglish ? "skills" : "técnicas"}
           </h1>
 
           <Techstack />
 
           <h1 className="project-heading">
-            <strong className="purple">Herramientas</strong> y tecnologías
+            <strong className="purple">
+              {isEnglish ? "Tools" : "Herramientas"}
+            </strong>{" "}
+            {isEnglish ? "and technologies" : "y tecnologías"}
           </h1>
 
           <Toolstack />
