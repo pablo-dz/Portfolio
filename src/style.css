@@ -464,6 +464,25 @@ button:focus {
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
 }
+
+.template-credit-link {
+  position: relative;
+  z-index: 1;
+  color: #e9a5ff !important;
+  text-decoration: underline !important;
+  text-underline-offset: 3px;
+  cursor: pointer;
+  transition:
+    color 0.2s ease,
+    text-shadow 0.2s ease;
+}
+
+.template-credit-link:hover,
+.template-credit-link:focus-visible {
+  color: #fff !important;
+  text-shadow: 0 0 8px #c95bf5;
+}
+
 .footer-icons {
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;

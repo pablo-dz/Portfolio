@@ -15,12 +15,12 @@ function Footer() {
   <h3>
     Basado en la plantilla de{" "}
     <a
-      href="https://github.com/soumyajit4419"
+      href="https://github.com/soumyajit4419/Portfolio"
       target="_blank"
       rel="noopener noreferrer"
-      style={{ color: "white" }}
+      className="template-credit-link"
     >
-      Soumyajit Behera
+      Soumyajit4419
     </a>
   </h3>
 </Col>
