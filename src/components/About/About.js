@@ -8,6 +8,7 @@ import Aboutcard from "./AboutCard";
 //import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
 import profilePortrait from "../../Assets/retrato-perfil.jpeg";
+import PhotoReveal from "../PhotoReveal";
 
 
 function About() {
@@ -34,11 +35,13 @@ function About() {
               md={5}
               className="about-img"
             >
-              <img
-                src={profilePortrait}
-                alt="Retrato de perfil"
-                className="img-fluid about-profile-img"
-              />
+              <PhotoReveal className="personal-photo-reveal">
+                <img
+                  src={profilePortrait}
+                  alt="Retrato de perfil"
+                  className="img-fluid about-profile-img"
+                />
+              </PhotoReveal>
             </Col>
           </Row>
 
