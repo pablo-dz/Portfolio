@@ -49,20 +49,6 @@ function Home() {
           <Col md={12} className="home-about-social">
             <h1>Encuéntrame en</h1>
 
-            <p>
-              Siéntete libre de{" "}
-              <span className="purple">conectar</span> conmigo.
-            </p>
-
-            <a
-  href="https://mail.google.com/mail/?view=cm&fs=1&to=paaldz02@gmail.com"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="contact-button"
->
-  Envíame un correo
-</a>
-
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
@@ -88,6 +74,20 @@ function Home() {
                 </a>
               </li>
             </ul>
+
+            <p>
+              Siéntete libre de{" "}
+              <span className="purple">conectar</span> conmigo.
+            </p>
+
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=paaldz02@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="contact-button"
+            >
+              Envíame un correo
+            </a>
           </Col>
         </Row>
       </Container>
