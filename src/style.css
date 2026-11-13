@@ -92,7 +92,7 @@ button:focus {
   transition: all 0.3s ease-out 0s !important;
   padding: 0.3rem 1.5rem !important;
   font-size: 1.2rem !important;
-  min-height: 145px;
+  min-height: 80px;
 }
 
 .navbar-toggler {
@@ -154,16 +154,6 @@ button:focus {
     min-height: auto;
   }
 
-  .navbar-brand {
-    flex-basis: 210px;
-    width: 210px;
-  }
-
-  .logo {
-    width: 210px !important;
-    height: 112px !important;
-  }
-
   .navbar-nav {
     align-items: flex-start;
   }
@@ -178,16 +168,46 @@ button:focus {
 }
 .navbar-brand {
   color: rgb(250, 250, 250) !important;
-  flex: 0 0 240px;
-  width: 240px;
+  flex: 0 0 auto;
+  width: auto;
   margin-right: 1.5rem !important;
 }
 
-.logo {
+.brand-lockup {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+}
+
+.brand-text {
   display: block;
-  width: 240px !important;
-  height: 128px !important;
-  object-fit: contain;
+  color: var(--imp-text-color);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.brand-tagline {
+  color: rgba(255, 255, 255, 0.85);
+  font-family: "PT Mono", monospace;
+  font-size: 0.95rem;
+  letter-spacing: 0.045em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+@media (max-width: 991px) {
+  .brand-text {
+    font-size: 1.6rem;
+  }
+
+  .brand-tagline {
+    font-size: 0.6rem;
+  }
 }
 
 .navbar-nav .nav-link {

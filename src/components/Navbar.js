@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { AiFillGithub, AiOutlineHome, AiOutlineFundProjectionScreen, AiOutlineUser } from "react-icons/ai";
@@ -39,8 +38,11 @@ function NavBar() {
       className={navColour ? "navbar sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand as={Link} to="/" className="d-flex">
-        <img src={logo} className="img-fluid logo" alt="brand" />
+        <Navbar.Brand as={Link} to="/" className="brand-lockup">
+          <span className="brand-text">Pablo Díaz A.</span>
+          <span className="brand-tagline">
+            {isEnglish ? "Portfolio" : "Portafolio"}
+          </span>
         </Navbar.Brand>
 
         <Navbar.Toggle
