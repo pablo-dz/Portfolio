@@ -393,6 +393,66 @@ button:focus {
   pointer-events: none;
 }
 
+.supernova-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.supernova-star {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--color-accent-secondary);
+  opacity: 0.2;
+  box-shadow: 0 0 4px 1px rgba(163, 230, 53, 0.16);
+  animation: supernova-flare 72s ease-in-out infinite;
+}
+
+.supernova-one {
+  top: 34%;
+  left: 84%;
+  animation-delay: -12s;
+}
+
+.supernova-two {
+  top: 46%;
+  left: 96%;
+  animation-delay: -36s;
+}
+
+.supernova-three {
+  top: 32%;
+  left: 8%;
+  animation-delay: -60s;
+}
+
+@keyframes supernova-flare {
+  0%,
+  88%,
+  94%,
+  100% {
+    opacity: 0.2;
+    transform: scale(0.6);
+    box-shadow: 0 0 4px 1px rgba(163, 230, 53, 0.16);
+  }
+
+  90% {
+    opacity: 0.9;
+    transform: scale(2.4);
+    box-shadow: 0 0 14px 4px rgba(163, 230, 53, 0.5);
+  }
+
+  93% {
+    opacity: 0.24;
+    transform: scale(0.85);
+    box-shadow: 0 0 5px 1px rgba(163, 230, 53, 0.2);
+  }
+}
+
 .home-header {
   padding-top: 80px !important;
 }
@@ -430,7 +490,7 @@ button:focus {
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
-  color: var(--color-accent-secondary) !important;
+  color: var(--color-accent) !important;
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
@@ -880,6 +940,11 @@ button:focus {
     opacity: 1;
     transform: none;
     transition: none;
+  }
+
+  .supernova-star {
+    animation: none;
+    opacity: 0;
   }
 }
 
