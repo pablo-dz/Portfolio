@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.23019585.css",
-    "main.js": "/Portfolio/static/js/main.39ec4c7c.js",
+    "main.css": "/Portfolio/static/css/main.f0e9dc4f.css",
+    "main.js": "/Portfolio/static/js/main.2cdeb3fb.js",
     "static/js/453.ace21015.chunk.js": "/Portfolio/static/js/453.ace21015.chunk.js",
     "static/media/retrato-personal.png": "/Portfolio/static/media/retrato-personal.c1069b82348e04b91845.png",
     "static/media/retrato-perfil.jpeg": "/Portfolio/static/media/retrato-perfil.cf674068f79991b6dd6b.jpeg",
@@ -10,7 +10,6 @@
     "static/media/cv.pdf": "/Portfolio/static/media/cv.695b1ae6aa8994e3e6bf.pdf",
     "static/media/galah_project.png": "/Portfolio/static/media/galah_project.dea15fdf3569905c315a.png",
     "static/media/binary_fraction.png": "/Portfolio/static/media/binary_fraction.98c1e509c37fa6f2e9b9.png",
-    "static/media/logo.png": "/Portfolio/static/media/logo.d3e83a6741bc105bbdd9.png",
     "static/media/SQL.svg": "/Portfolio/static/media/SQL.7fd9bdcee9744b3b731709f2753c68af.svg",
     "static/media/Ruby.svg": "/Portfolio/static/media/Ruby.0b2a0f98f2862dd9b67a14f245108848.svg",
     "static/media/LaTeX.svg": "/Portfolio/static/media/LaTeX.d49af74365400fb2bb3c0efdeb614e1e.svg",
@@ -21,7 +20,7 @@
     "static/media/Office.svg": "/Portfolio/static/media/Office.3f38230870bb601609bee4c72b68d504.svg",
     "static/media/vscode.svg": "/Portfolio/static/media/vscode.f5afdf1c4c0b365325db1e067c48782d.svg",
     "static/media/Python.svg": "/Portfolio/static/media/Python.9daed22c470296a63e19d0d509a1828b.svg",
-    "static/media/pre.svg": "/Portfolio/static/media/pre.d4812f51c8c80976eaab.svg",
+    "static/media/pre.svg": "/Portfolio/static/media/pre.d121a1ec582bb5c4fe1f.svg",
     "static/media/MATLAB.svg": "/Portfolio/static/media/MATLAB.cc6187cc6d9e41996c097a556239f440.svg",
     "index.html": "/Portfolio/index.html",
     "static/media/Jupyter.svg": "/Portfolio/static/media/Jupyter.0482682905e698f6a88389cd0b57dc37.svg",
@@ -31,12 +30,12 @@
     "static/media/HTML5.svg": "/Portfolio/static/media/HTML5.8664168d5bc90b1a24396f85aadbf623.svg",
     "static/media/flag-uk.svg": "/Portfolio/static/media/flag-uk.5c316e36161bd26ec22b.svg",
     "static/media/flag-es.svg": "/Portfolio/static/media/flag-es.71d33a71f32d6f0a7c31.svg",
-    "main.23019585.css.map": "/Portfolio/static/css/main.23019585.css.map",
-    "main.39ec4c7c.js.map": "/Portfolio/static/js/main.39ec4c7c.js.map",
+    "main.f0e9dc4f.css.map": "/Portfolio/static/css/main.f0e9dc4f.css.map",
+    "main.2cdeb3fb.js.map": "/Portfolio/static/js/main.2cdeb3fb.js.map",
     "453.ace21015.chunk.js.map": "/Portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.23019585.css",
-    "static/js/main.39ec4c7c.js"
+    "static/css/main.f0e9dc4f.css",
+    "static/js/main.2cdeb3fb.js"
   ]
 }
