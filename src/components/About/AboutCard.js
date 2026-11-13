@@ -68,8 +68,8 @@ function AboutCard() {
               <li className="about-activity">
                 <ImPointRight />{" "}
                 {isEnglish
-                  ? "Reading novels, especially those exploring philosophical themes 📚"
-                  : "Leer novelas, especialmente aquellas relacionadas con tópicos filosóficos 📚"}
+                  ? "Reading novels of all kinds 📚"
+                  : "Leer novelas de todo tipo 📚"}
               </li>
               <li className="about-activity">
                 <ImPointRight />{" "}
@@ -80,20 +80,14 @@ function AboutCard() {
               <li className="about-activity">
                 <ImPointRight />{" "}
                 {isEnglish
-                  ? "Chess and board games ♟️🎲"
-                  : "El ajedrez y los juegos de mesa ♟️🎲"}
+                  ? "Chess and card games ♟️🃏 "
+                  : "El ajedrez y juegos de cartas ♟️🃏"}
               </li>
               <li className="about-activity">
                 <ImPointRight />{" "}
                 {isEnglish
-                  ? "Learning to play the electric bass 🎸"
-                  : "Aprender a tocar el bajo eléctrico 🎸"}
-              </li>
-              <li className="about-activity">
-                <ImPointRight />{" "}
-                {isEnglish
-                  ? "Video games, one of my oldest interests 🎮"
-                  : "Los videojuegos, uno de mis intereses más antiguos 🎮"}
+                  ? "Videogames, my oldest hobby 🎮"
+                  : "Los videojuegos, mi hobbie más antiguo 🎮"}
               </li>
             </ul>
 

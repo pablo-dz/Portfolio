@@ -39,14 +39,6 @@ function Home2() {
                   kinematic properties of these systems.
                   <br />
                   <br />
-                  I have also applied computational tools in other contexts,
-                  including processing and structuring information with{" "}
-                  <b className="purple">SQL</b> during my work at CONAF. I have
-                  also developed <b className="purple">machine learning</b>{" "}
-                  projects, using algorithms such as Random Forest to analyze
-                  astronomical data from the GALAH catalog.
-                  <br />
-                  <br />
                   My main professional interests are in{" "}
                   <i>
                     <b className="purple">
@@ -75,15 +67,6 @@ function Home2() {
                   observaciones del instrumento VLT/MUSE. Mediante modelos
                   estadísticos y métodos de optimización, estudié las
                   propiedades físicas y cinemáticas de estos sistemas.
-                  <br />
-                  <br />
-                  También he aplicado herramientas computacionales en otros
-                  contextos, como el procesamiento y estructuración de
-                  información mediante <b className="purple">SQL</b> durante
-                  mi experiencia en CONAF. Asimismo, he desarrollado proyectos
-                  de <b className="purple">Machine Learning</b>, utilizando
-                  algoritmos como Random Forest para analizar datos
-                  astronómicos del catálogo GALAH.
                   <br />
                   <br />
                   Mis principales intereses profesionales se encuentran en el{" "}
