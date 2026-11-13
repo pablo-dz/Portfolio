@@ -1,14 +1,14 @@
 html {
   --section-background-color: linear-gradient(
     to bottom left,
-    rgba(20, 34, 51, 0.582),
-    rgba(11, 18, 32, 0.904)
+    rgba(16, 30, 21, 0.582),
+    rgba(7, 19, 11, 0.904)
   );
 
   --image-gradient: linear-gradient(
     to bottom left,
-    rgba(20, 34, 51, 0.678),
-    rgba(11, 18, 32, 0.863)
+    rgba(16, 30, 21, 0.678),
+    rgba(7, 19, 11, 0.863)
   );
 
   --imp-text-color: var(--color-accent);
@@ -67,7 +67,7 @@ button:focus {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(52, 211, 153, 0.959);
+  background: rgba(74, 222, 128, 0.959);
   border-radius: 12px;
 }
 
@@ -81,7 +81,7 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: rgba(20, 34, 51, 0.92) !important;
+  background-color: rgba(16, 30, 21, 0.92) !important;
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
   backdrop-filter: blur(15px) !important;
@@ -262,8 +262,8 @@ button:focus {
   height: 40px;
   padding: 0;
   overflow: hidden;
-  background: rgba(11, 18, 32, 0.85);
-  border: 1px solid rgba(52, 211, 153, 0.75);
+  background: rgba(7, 19, 11, 0.85);
+  border: 1px solid rgba(74, 222, 128, 0.75);
   border-radius: 999px;
   cursor: pointer;
   transition:
@@ -294,7 +294,7 @@ button:focus {
 
 .language-toggle:hover,
 .language-toggle:focus-visible {
-  box-shadow: 0 0 10px rgba(52, 211, 153, 0.6);
+  box-shadow: 0 0 10px rgba(74, 222, 128, 0.6);
   outline: none;
 }
 
@@ -339,8 +339,8 @@ button:focus {
   filter:
     drop-shadow(0 0 5px #fff)
     drop-shadow(0 0 12px #86efac)
-    drop-shadow(0 0 24px #34d399)
-    drop-shadow(0 0 30px rgba(52, 211, 153, 0.9));
+    drop-shadow(0 0 24px #4ade80)
+    drop-shadow(0 0 30px rgba(74, 222, 128, 0.9));
 }
 
 .navbar-nav .nav-item .nav-link::after {
@@ -615,7 +615,7 @@ button:focus {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #047857;
+  background: #166534;
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
@@ -627,7 +627,7 @@ button:focus {
 }
 
 .home-social-icons:hover {
-  color: #047857;
+  color: #166534;
   box-shadow: 0 0 5px var(--color-accent);
   text-shadow: 0 0 2px var(--color-accent);
 }
@@ -637,7 +637,7 @@ button:focus {
 }
 
 .icon-colour {
-  color: #047857 !important;
+  color: #166534 !important;
 }
 
 /* --------- */
@@ -728,7 +728,7 @@ button:focus {
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(52, 211, 153, 0.22) !important;
+  box-shadow: 0 4px 5px 3px rgba(74, 222, 128, 0.22) !important;
   color: white !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
@@ -752,7 +752,7 @@ button:focus {
   font-size: 1.3rem !important;
   font-weight: 800 !important;
   line-height: 1.35 !important;
-  text-shadow: 0 0 12px rgba(52, 211, 153, 0.3);
+  text-shadow: 0 0 12px rgba(74, 222, 128, 0.3);
 }
 
 .project-card-description {
@@ -771,7 +771,7 @@ button:focus {
 
 .blog-card-view {
   background-color: transparent !important;
-  box-shadow: 0 3px 3px 2px rgba(52, 211, 153, 0.22) !important;
+  box-shadow: 0 3px 3px 2px rgba(74, 222, 128, 0.22) !important;
   color: white !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
@@ -806,14 +806,14 @@ button:focus {
 
 .btn-primary {
   color: #fff !important;
-  background-color: #047857 !important;
-  border-color: #047857 !important;
+  background-color: #166534 !important;
+  border-color: #166534 !important;
 }
 
 .btn-primary:hover {
   color: #fff !important;
-  background-color: #065f46 !important;
-  border-color: #065f46 !important;
+  background-color: #14532d !important;
+  border-color: #14532d !important;
 }
 .btn:focus {
   outline: none !important;
@@ -846,11 +846,11 @@ button:focus {
   margin: 15px !important;
   padding: 10px 20px !important;
   opacity: 0.93 !important;
-  outline: 1.7px solid rgba(52, 211, 153, 0.637) !important;
+  outline: 1.7px solid rgba(74, 222, 128, 0.637) !important;
   vertical-align: middle !important;
   text-align: center !important;
   border-radius: 24px !important;
-  box-shadow: 4px 5px 4px 3px rgba(52, 211, 153, 0.137) !important;
+  box-shadow: 4px 5px 4px 3px rgba(74, 222, 128, 0.137) !important;
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
   width: fit-content !important;
@@ -919,7 +919,7 @@ button:focus {
 
   box-shadow:
     0 8px 30px rgba(0, 0, 0, 0.35),
-    0 0 20px rgba(52, 211, 153, 0.10);
+    0 0 20px rgba(74, 222, 128, 0.10);
 
   transition:
     transform 0.3s ease,
@@ -1014,7 +1014,7 @@ button:focus {
 .resume .resume-item .resume-title {
   line-height: 18px;
   font-size: 0.9em;
-  background: rgba(20, 34, 51, 0.72);
+  background: rgba(16, 30, 21, 0.72);
   padding: 8px 15px;
   display: inline-block;
   font-weight: 600;
@@ -1054,8 +1054,8 @@ button:focus {
 }
 
 .like-btn {
-  background-color: rgba(52, 211, 153, 0.2) !important;
-  border-color: rgba(52, 211, 153, 0.2) !important;
+  background-color: rgba(74, 222, 128, 0.2) !important;
+  border-color: rgba(74, 222, 128, 0.2) !important;
   padding: 0.25rem 0.98rem !important;
   border-radius: 5px !important;
   line-height: 1.4 !important;
@@ -1089,7 +1089,7 @@ button:focus {
 
 .fork-btn-inner {
   line-height: 1.4em !important;
-  background-color: rgba(52, 211, 153, 0.2) !important;
+  background-color: rgba(74, 222, 128, 0.2) !important;
   padding: 0.25rem 1.1rem !important;
   vertical-align: middle !important;
   text-align: center !important;

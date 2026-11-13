@@ -3,12 +3,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=PT+Mono&display=swap");
 
 :root {
-  --color-background: #0b1220;
-  --color-surface: #142233;
-  --color-accent: #34d399;
+  --color-background: #07130b;
+  --color-surface: #101e15;
+  --color-accent: #4ade80;
   --color-accent-secondary: #a3e635;
-  --color-text: #e2e8f0;
-  --color-muted: #94a3b8;
+  --color-text: #e6f4ea;
+  --color-muted: #9cafa1;
 }
 
 body {
