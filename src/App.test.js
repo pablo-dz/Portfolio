@@ -12,6 +12,7 @@ jest.mock("./components/PhotoReveal", () => ({ children }) => children);
 test("starts in Spanish and switches the page to English", () => {
   render(<App />);
 
+  expect(screen.getByText("Portafolio")).toBeInTheDocument();
   expect(
     screen.getByRole("button", { name: "Switch language to English" })
   ).toBeInTheDocument();
@@ -23,6 +24,7 @@ test("starts in Spanish and switches the page to English", () => {
     screen.getByRole("button", { name: "Switch language to English" })
   );
 
+  expect(screen.getByText("Portfolio")).toBeInTheDocument();
   expect(screen.getByRole("link", { name: /Home/i })).toBeInTheDocument();
   expect(
     screen.getByRole("heading", { name: /Find me on/i })

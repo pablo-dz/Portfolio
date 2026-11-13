@@ -91,7 +91,7 @@ function AboutCard() {
               </li>
             </ul>
 
-            <p style={{ color: "rgb(155 126 172)" }}>
+            <p style={{ color: "var(--color-muted)" }}>
               "We can only see a short distance ahead, but we can see plenty there that needs to be done."
             </p>
             <footer className="blockquote-footer about-quote-footer">

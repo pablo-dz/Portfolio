@@ -1,11 +1,25 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap'); */
 
-@import url("https://fonts.googleapis.com/css2?family=Outfit&family=PT+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=PT+Mono&display=swap");
+
+:root {
+  --color-background: #07130b;
+  --color-surface: #101e15;
+  --color-accent: #4ade80;
+  --color-accent-secondary: #a3e635;
+  --color-text: #e6f4ea;
+  --color-muted: #9cafa1;
+}
 
 body {
   margin: 0;
   font-family: "PT Mono", monospace !important;
+  color: var(--color-text);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
+  background-image: linear-gradient(
+    to left,
+    var(--color-background),
+    var(--color-surface)
+  );
 }

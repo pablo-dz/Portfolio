@@ -26,7 +26,7 @@ function Github() {
         username="pablo-dz"
         blockSize={15}
         blockMargin={5}
-        color="#c084f5"
+        color="#4ade80"
         fontSize={14}
         labels={
           isEnglish
