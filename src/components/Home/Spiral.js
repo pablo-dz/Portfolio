@@ -51,8 +51,8 @@ function Spiral() {
 
     // Paleta de colores
     const colorCore = new THREE.Color("#ffffff");
-    const colorInner = new THREE.Color("#d49aff");
-    const colorOuter = new THREE.Color("#829fff");
+    const colorInner = new THREE.Color("#34d399");
+    const colorOuter = new THREE.Color("#a3e635");
 
     // Distribución gaussiana para una dispersión más natural
     const randomGaussian = () => {

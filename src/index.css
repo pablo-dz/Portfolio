@@ -2,10 +2,24 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=PT+Mono&display=swap");
 
+:root {
+  --color-background: #0b1220;
+  --color-surface: #142233;
+  --color-accent: #34d399;
+  --color-accent-secondary: #a3e635;
+  --color-text: #e2e8f0;
+  --color-muted: #94a3b8;
+}
+
 body {
   margin: 0;
   font-family: "PT Mono", monospace !important;
+  color: var(--color-text);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
+  background-image: linear-gradient(
+    to left,
+    var(--color-background),
+    var(--color-surface)
+  );
 }

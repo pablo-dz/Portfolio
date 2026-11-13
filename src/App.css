@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #0b1220;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,7 +25,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #34d399;
 }
 
 @keyframes App-logo-spin {
@@ -50,8 +50,8 @@
   margin-bottom: 15px;
   padding: 10px 25px;
   color: white;
-  background-color: #c084f5;
-  border: 1px solid #c084f5;
+  background-color: #047857;
+  border: 1px solid #047857;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 500;
@@ -61,7 +61,7 @@
 
 .contact-button:hover:not(:disabled) {
   background-color: transparent;
-  color: #c084f5;
+  color: #34d399;
 }
 
 .contact-button:disabled {
@@ -88,15 +88,15 @@
   width: 100%;
   padding: 0.7rem 0.85rem;
   color: white;
-  background: rgba(15, 10, 28, 0.8);
-  border: 1px solid rgba(199, 112, 240, 0.55);
+  background: rgba(20, 34, 51, 0.85);
+  border: 1px solid rgba(52, 211, 153, 0.55);
   border-radius: 6px;
   font: inherit;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  outline: 2px solid #c084f5;
+  outline: 2px solid #34d399;
   outline-offset: 2px;
 }
 
