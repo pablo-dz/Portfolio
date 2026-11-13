@@ -33,7 +33,7 @@ button:focus {
   height: 100%;
   z-index: 999999;
   background-color: var(--color-background);
-  background-image: url(./Assets/pre.svg);
+  background-image: url(./Assets/ui/pre.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -278,14 +278,14 @@ button:focus {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: url("./Assets/flag-uk.svg") center / cover no-repeat;
+  background: url("./Assets/ui/flag-uk.svg") center / cover no-repeat;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
   content: "";
   transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .language-toggle-item:not(.is-english) .language-toggle::before {
-  background-image: url("./Assets/flag-es.svg");
+  background-image: url("./Assets/ui/flag-es.svg");
 }
 
 .language-toggle-item.is-english .language-toggle::before {

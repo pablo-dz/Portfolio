@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import personalPortrait from "../../Assets/retrato-personal.png";
+import personalPortrait from "../../Assets/images/retrato-personal.png";
 import Tilt from "react-parallax-tilt";
 import ScrollReveal from "../ScrollReveal";
 import PhotoReveal from "../PhotoReveal";

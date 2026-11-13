@@ -5,9 +5,9 @@ import Particle from "../Particle";
 import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-//import laptopImg from "../../Assets/about.png";
+//import laptopImg from "../../Assets/images/about.png";
 import Toolstack from "./Toolstack";
-import profilePortrait from "../../Assets/retrato-perfil.jpeg";
+import profilePortrait from "../../Assets/images/retrato-perfil.jpeg";
 import PhotoReveal from "../PhotoReveal";
 import { useLanguage } from "../../contexts/LanguageContext";
 
