@@ -16,6 +16,7 @@ import Particle from "../Particle";
 import galah from "../../Assets/Projects/galah_project.png";
 import globular_cluster from "../../Assets/Projects/binary_fraction.png";
 import pkollector from "../../Assets/Projects/pkollector_logo.png";
+import finance_tracker from "../../Assets/Projects/finance_tracker_logo.png";
 import { useLanguage } from "../../contexts/LanguageContext";
 
 function Projects() {
@@ -87,6 +88,21 @@ function Projects() {
               }
               ghLink="https://github.com/pablo-dz/PKollector"
               demoLink="https://p-kollector.vercel.app/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={finance_tracker}
+              isBlog={false}
+              title="Finance Tracker"
+              description={
+                isEnglish
+                  ? "A monthly financial dashboard to understand how your money evolves over time, with accounts, budgets, and savings goals. Track your spending, monitor your savings, and reach your financial objectives with an intuitive interface."
+                  : "Un dashboard mensual para entender cómo evoluciona tu dinero, con cuentas, presupuestos y metas de ahorro. Realiza un seguimiento de tus gastos, monitorea tus ahorros y alcanza tus objetivos financieros con una interfaz intuitiva."
+              }
+              ghLink="https://github.com/pablo-dz/finance-tracker"
+              demoLink="https://finance-tracker-akxi.onrender.com"
             />
           </Col>
 
