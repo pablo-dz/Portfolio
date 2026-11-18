@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.f0e9dc4f.css",
-    "main.js": "/Portfolio/static/js/main.cf582714.js",
+    "main.js": "/Portfolio/static/js/main.53bd8d33.js",
     "static/js/453.ace21015.chunk.js": "/Portfolio/static/js/453.ace21015.chunk.js",
     "static/media/retrato-personal.png": "/Portfolio/static/media/retrato-personal.c1069b82348e04b91845.png",
     "static/media/finance_tracker_logo.png": "/Portfolio/static/media/finance_tracker_logo.ac254067715fa40f63e1.png",
@@ -32,11 +32,11 @@
     "static/media/flag-uk.svg": "/Portfolio/static/media/flag-uk.5c316e36161bd26ec22b.svg",
     "static/media/flag-es.svg": "/Portfolio/static/media/flag-es.71d33a71f32d6f0a7c31.svg",
     "main.f0e9dc4f.css.map": "/Portfolio/static/css/main.f0e9dc4f.css.map",
-    "main.cf582714.js.map": "/Portfolio/static/js/main.cf582714.js.map",
+    "main.53bd8d33.js.map": "/Portfolio/static/js/main.53bd8d33.js.map",
     "453.ace21015.chunk.js.map": "/Portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f0e9dc4f.css",
-    "static/js/main.cf582714.js"
+    "static/js/main.53bd8d33.js"
   ]
 }
